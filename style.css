@@ -87,6 +87,43 @@ h2 {
     white-space: nowrap;
     border: 0;
 }
+/* Poster */
+.poster {
+    position: relative;
+    height: 100vh;
+    background: url('images/Cover.jpg') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aqua;
+}
+
+.poster-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.4);
+}
+
+.poster-content {
+    position: absolute;
+    text-align: center;
+    bottom: 0vh;
+    color: #fff;
+    padding: 1rem;
+}
+
+.poster-content .subtitle {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    letter-spacing: 0.7rem;
+}
+
+.poster-content .names {
+    font-family: "WindSong", cursive;
+    font-size: clamp(1rem, 6vw, 5rem);
+    margin-bottom: 0.5rem;
+    letter-spacing: 0.1rem;
+}
 
 /* Hero */
 .hero {
@@ -118,9 +155,10 @@ h2 {
 }
 
 .hero-content .names {
-    font-family: 'Great Vibes', cursive;
-    font-size: clamp(3rem, 8vw, 6rem);
+    font-family: "WindSong", cursive;
+    font-size: clamp(2rem, 6vw, 6rem);
     margin-bottom: 0.5rem;
+    letter-spacing: 0.1rem;
 }
 
 .hero-content .date {
