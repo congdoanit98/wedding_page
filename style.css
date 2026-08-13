@@ -107,7 +107,7 @@ h2 {
 .poster-content {
     position: absolute;
     text-align: center;
-    bottom: 0vh;
+    top: 16vh;
     color: #fff;
     padding: 1rem;
 }
@@ -129,7 +129,7 @@ h2 {
 .hero {
     position: relative;
     height: 100vh;
-    background: url('images/Cover.jpg') center/cover no-repeat;
+    background: url('images/Hero.jpg') center/cover no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -145,6 +145,7 @@ h2 {
     position: relative;
     text-align: center;
     color: #fff;
+    top: 10vh;
     padding: 2rem;
 }
 
