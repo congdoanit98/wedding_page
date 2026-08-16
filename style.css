@@ -157,7 +157,7 @@ h2 {
 
 .hero-content .names {
     font-family: "WindSong", cursive;
-    font-size: clamp(2rem, 6vw, 6rem);
+    font-size: clamp(1.75rem, 6vw, 6rem);
     margin-bottom: 0.5rem;
     letter-spacing: 0.1rem;
 }
@@ -209,13 +209,14 @@ h2 {
     background: rgba(255,255,255,0.2);
     padding: 0.5rem 1rem;
     border-radius: 4px;
-    font-size: 1rem;
+    font-size: 0.75rem;
 }
 
 /* Couple */
 .couple {
-    padding: 5rem 2rem;
+    padding: 4rem 1rem;
     text-align: center;
+
 }
 
 .couple-grid {
@@ -231,6 +232,7 @@ h2 {
     border-radius: 8px;
     box-shadow: 0 4px 20px rgba(0,0,0,0.08);
     min-width: 280px;
+    
 }
 
 .couple-card img {
@@ -339,7 +341,7 @@ h2 {
     cursor: pointer;
 }
 
-.gallery-grid img:hover { transform: scale(1.03); }
+.gallery-grid img:hover { transform: scale(1.05); }
 
 /* RSVP */
 .rsvp {

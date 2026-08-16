@@ -40,14 +40,30 @@
     <section class="hero">
         <div class="hero-overlay"></div>
         <div class="hero-content">
-            <p class="subtitle">Trân trọng kính mời quý khách đến tham dự đám cưới</p>
-            <h1 class="names">Kim Chi &amp; Công Đoàn</h1>
-            <p class="date">Thứ Ba, 29.09.2026 | 11h00</p>
-            <p class="lunar">(Mùng 19 tháng 8, Bính Ngọ)</p>
-            <p class="venue">Tư Gia</p>
-            <p class="address">Vĩnh Bình, An Giang</p>
-            <a href="https://maps.app.goo.gl/wLxWVvbNuHjiGBYG7" target="_blank" class="hero-map-link">📍 Xem bản đồ</a>
-            <div class="countdown" id="countdown"><span>0 ngày</span> <span>13 giờ</span> <span>5 phút</span> <span>22 giây</span></div>
+            <div class="hero-item">
+                <p class="subtitle">Trân trọng kính mời quý khách đến tham dự đám cưới</p>
+            </div>
+            <div class="hero-item">
+                <h1 class="names">Kim Chi &amp; Công Đoàn</h1>
+            </div>
+            <div class="hero-item">
+                <p class="date">Thứ Ba, 29.09.2026 | 11h00</p>
+            </div>
+            <div class="hero-item">
+                <p class="lunar">(Mùng 19 tháng 8, Bính Ngọ)</p>
+            </div>
+            <div class="hero-item">
+                <p class="venue">Tư Gia</p>
+            </div>
+            <div class="hero-item">
+                <p class="address">Vĩnh Bình, An Giang</p>
+            </div>
+            <div class="hero-item">
+                <a href="https://maps.app.goo.gl/rEfKGnyTMEnXqWCo6" target="_blank" class="hero-map-link">📍 Xem bản đồ</a>
+            </div>
+            <div class="hero-item">
+                <div class="countdown" id="countdown"><span>0 ngày</span> <span>13 giờ</span> <span>5 phút</span> <span>22 giây</span></div>
+            </div>
         </div>
     </section>
 
@@ -58,15 +74,15 @@
                 <img src="images/Groom.jpg" alt="Chú rể - Nguyễn Công Đoàn">
                 <h3>Chú Rể</h3>
                 <p class="full-name">Nguyễn Công Đoàn</p>
-                <p class="parents">Con ông <strong>Nguyễn Văn Hiền</strong></p>
-                <p class="parents">và bà <strong>Phạm Thúy Kiều</strong></p>
+                <p class="parents"><strong>Trưởng Nam</strong></p>
+                <p class="parents">nhà họ Nguyễn</strong></p>
             </div>
             <div class="couple-card">
                 <img src="images/Bride.jpg" alt="Cô dâu - Nguyễn Kim Chi">
                 <h3>Cô Dâu</h3>
                 <p class="full-name">Nguyễn Kim Chi</p>
-                <p class="parents">Con ông <strong>Nguyễn Niên Năm</strong></p>
-                <p class="parents">và bà <strong>... ... Ngọt</strong></p>
+                <p class="parents"><strong>Trưởng Nữ</strong></p>
+                <p class="parents">nhà họ Nguyễn</strong></p>
             </div>
         </div>
     </section>
@@ -94,14 +110,31 @@
     <section class="gallery" id="gallery">
         <h2>Khoảnh Khắc Của Chúng Mình</h2>
         <div class="gallery-grid">
-            <img src="images/1.jpg" alt="Ảnh cưới" loading="lazy">
-            <img src="images/2.jpg" alt="Ảnh cưới" loading="lazy">
-            <img src="images/3.jpg" alt="Ảnh cưới" loading="lazy">
-            <img src="images/4.jpg" alt="Ảnh cưới" loading="lazy">
-            <img src="images/5.jpg" alt="Ảnh cưới" loading="lazy">
-            <img src="images/6.jpg" alt="Ảnh cưới" loading="lazy">
-            <img src="images/7.jpg" alt="Ảnh cưới" loading="lazy">
-            <img src="images/8.jpg" alt="Ảnh cưới" loading="lazy">
+            <div class="gallery-item">
+                <img src="images/1.jpg" alt="Ảnh cưới" loading="lazy">
+            </div>
+            <div class="gallery-item">
+                <img src="images/2.jpg" alt="Ảnh cưới" loading="lazy">
+            </div>
+            <div class="gallery-item">
+                <img src="images/3.jpg" alt="Ảnh cưới" loading="lazy">
+            </div>
+            <div class="gallery-item">
+                <img src="images/4.jpg" alt="Ảnh cưới" loading="lazy">
+            </div>    
+            <div class="gallery-item">
+                <img src="images/5.jpg" alt="Ảnh cưới" loading="lazy">
+            </div>
+            <div class="gallery-item">
+                <img src="images/6.jpg" alt="Ảnh cưới" loading="lazy">                
+            </div>
+            <div class="gallery-item">
+                <img src="images/7.jpg" alt="Ảnh cưới" loading="lazy">                
+            </div>
+            <div class="gallery-item">
+                <img src="images/8.jpg" alt="Ảnh cưới" loading="lazy">
+            </div>
+            
         </div>
     </section>
 
@@ -129,7 +162,9 @@
     <footer>
         <p>Cảm ơn bạn đã dành thời gian và tình cảm đến chung vui cùng chúng mình trong ngày trọng đại này.</p>
     </footer>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/ScrollTrigger.min.js"></script>	
+    <script src="main.js"></script>
     <script>
         // Hamburger menu toggle
         const hamburger = document.getElementById('hamburger');
