@@ -28,7 +28,7 @@ ScrollTrigger.create({
     // end: "top 100px",
     // toggleClass: "active",
     // pin: true,
-    scrub: 1,
+    // scrub: 1,
     // onUpdate: self => {
     //   console.log("progress:", self.progress.toFixed(3), "direction:", self.direction, "velocity", self.getVelocity());
     // }
