@@ -14,6 +14,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Carattere&family=Passions+Conflict&family=WindSong:wght@400;500&display=swap" rel="stylesheet">
 <body>
+
     <nav class="navbar">
         <a href="#" class="logo">C ♥ Đ</a>
         <button class="hamburger" id="hamburger" aria-label="Mở menu">
@@ -23,11 +24,19 @@
         </button>
         <ul class="nav-links" id="nav-links">
             <li><a href="#couple">Cô Dâu &amp; Chú Rể</a></li>
-            <li><a href="#details">Lễ Cưới</a></li>
+            <li><a href="#wedding-info">Lễ Cưới</a></li>
             <li><a href="#gallery">Album</a></li>
             <li><a href="#rsvp">Xác Nhận</a></li>
         </ul>
     </nav>
+
+    <audio id="weddingMusic" loop>
+        <source src="music/beautiful_in_white.mp3" type="audio/mpeg">
+    </audio>
+
+    <button id="musicButton" class="music-button">
+        ♫
+    </button>
 
     <section class="poster">
         <div class="poster-overlay"></div>
@@ -87,7 +96,7 @@
         </div>
     </section>
 
-    <section class="details" id="details">
+    <!-- <section class="details" id="details">
         <h2>Thông Tin Lễ Cưới</h2>
         <div class="details-grid">
             <div class="detail-card">
@@ -103,6 +112,62 @@
                 <p><strong>Lễ Vu Quy:</strong> 8:00</p>
                 <p><strong>Ngày:</strong> Thứ Ba, 29.09.2026</p>
                 <p><strong>Địa điểm:</strong> Vĩnh Bình, An Giang</p>
+            </div>
+        </div>
+    </section> -->
+
+    <section class="wedding-info" id="wedding-info">
+        <h2>Thông Tin Lễ Cưới</h2>
+        <!-- TIỆC NHÀ GÁI -->
+        <div class="party party-bride">
+            <div class="party-title">
+                <span class="line"></span>
+                <span class="dot"></span>
+                <h2>TIỆC NHÀ GÁI</h2>
+            </div>
+
+            <div class="party-content">
+                <div class="time">
+                    19:00, THỨ BA
+                </div>
+                <div class="date">
+                    29 <span>|</span> 09 <span>|</span> 2026
+                </div>
+                <div class="lunar-date">
+                    (Tức ngày 19 tháng 09 năm Bính Ngọ)
+                </div>
+                <div class="location-title">
+                    TẠI TƯ GIA NHÀ GÁI
+                </div>
+                <div class="address">
+                    (Chợ Vĩnh Bình Nam - Vĩnh Bình - An Giang)
+                </div>
+            </div>
+        </div>
+
+        <!-- TIỆC NHÀ TRAI -->
+        <div class="party party-groom">
+            <div class="party-title">
+                <h2>TIỆC NHÀ TRAI</h2>
+                <span class="dot"></span>
+                <span class="line"></span>
+            </div>
+            <div class="party-content">
+                <div class="time">
+                    17:00, THỨ TƯ
+                </div>
+                <div class="date">
+                    28 <span>|</span> 10 <span>|</span> 2026
+                </div>
+                <div class="lunar-date">
+                    (Tức ngày 19 tháng 09 năm Bính Ngọ)
+                </div>
+                <div class="location-title">
+                    TẠI TƯ GIA NHÀ TRAI
+                </div>
+                <div class="address">
+                    (Vĩnh Lộc - Vĩnh Thuận - An Giang)
+                </div>
             </div>
         </div>
     </section>
@@ -139,29 +204,29 @@
     </section>
 
     <section class="rsvp" id="rsvp">
-        <h2>Xác Nhận Tham Dự</h2>
         <p>Tụi mình rất mong được gặp bạn! 🤍</p>
-        <p class="deadline">Vui lòng xác nhận trước ngày <strong>25.07.2026</strong></p>
-        <form action="/success" method="POST" name="rsvp"><input type="hidden" name="form-name" value="rsvp">
-            <label for="name-field" class="sr-only">Họ và tên</label>
-            <input type="text" name="name" id="name-field" placeholder="Họ và tên" required="">
-            <label for="attending-field" class="sr-only">Bạn có tham dự được không?</label>
-            <select name="attending" id="attending-field" required="">
-                <option value="">Bạn có tham dự được không?</option>
-                <option value="yes">Vui vẻ nhận lời 🎉</option>
-                <option value="no">Rất tiếc không tham dự được 😢</option>
-            </select>
-            <label for="guests-field" class="sr-only">Số người tham dự</label>
-            <input type="number" name="guests" id="guests-field" placeholder="Số người tham dự" min="1" max="10" style="display:none">
-            <label for="message-field" class="sr-only">Lời nhắn</label>
-            <textarea name="message" id="message-field" placeholder="Lời nhắn gửi đến cô dâu chú rể (tuỳ chọn)"></textarea>
-            <button type="submit">Gửi Xác Nhận</button>
-        </form>
+        <details class="wedding-gift">
+            <summary class="wedding-gift-btn">
+                GỬI MỪNG CƯỚI
+            </summary>
+
+            <div class="qr-container">
+                <img src="images/qr-code.png" alt="Mã QR mừng cưới">
+            </div>
+        </details>
     </section>
 
     <footer>
         <p>Cảm ơn bạn đã dành thời gian và tình cảm đến chung vui cùng chúng mình trong ngày trọng đại này.</p>
+        <br>
+        <p>
+            with love
+        </p>
+        <h3>
+            Chi & Đoàn
+        </h3>
     </footer>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/ScrollTrigger.min.js"></script>	
     <script src="main.js"></script>
@@ -181,11 +246,6 @@
             });
         });
 
-        // Show/hide guests field
-        document.getElementById('attending-field').addEventListener('change', function() {
-            document.getElementById('guests-field').style.display = this.value === 'yes' ? '' : 'none';
-        });
-
         const wedding = new Date('2026-09-29T11:00:00+07:00');
         function updateCountdown() {
             const now = new Date();
@@ -200,7 +260,52 @@
         }
         updateCountdown();
         setInterval(updateCountdown, 1000);
-    </script>
 
+        const music = document.getElementById("weddingMusic");
+        const musicButton = document.getElementById("musicButton");
+
+
+        async function startMusic() {
+            try {
+                music.volume = 0.5;
+
+                await music.play();
+
+                musicButton.classList.add("playing");
+
+            } catch (error) {
+                console.log("Autoplay bị trình duyệt chặn.");
+            }
+        }
+
+        // Thử autoplay khi load
+        window.addEventListener("load", startMusic);
+
+        // Nếu autoplay bị chặn,
+        // lần đầu người dùng chạm vào trang thì phát nhạc
+        document.addEventListener("click", () => {
+
+            if (music.paused) {
+                music.play();
+                musicButton.classList.add("playing");
+            }
+
+        }, { once: true });
+
+
+        // Nút điều khiển nhạc
+        musicButton.addEventListener("click", (event) => {
+
+            event.stopPropagation();
+
+            if (music.paused) {
+                music.play();
+                musicButton.classList.add("playing");
+            } else {
+                music.pause();
+                musicButton.classList.remove("playing");
+            }
+        });
+    </script>
 
 </body></html>

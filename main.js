@@ -124,3 +124,49 @@ ScrollTrigger.create({
     //   console.log("progress:", self.progress.toFixed(3), "direction:", self.direction, "velocity", self.getVelocity());
     // }
 });
+
+const partyBride = gsap.from(".party-bride", {
+    delay: 0.25,
+    x: -200,
+    duration: 3,
+    opacity: 0,
+    ease: "power3",
+    stagger: 0.5
+});
+ScrollTrigger.create({
+    trigger: ".wedding-info",
+    animation: partyBride,
+    // Uncomment these to see how they affect the ScrollTrigger
+    // markers: true,
+    start: "top 300px",
+    // end: "top 100px",
+    // toggleClass: "active",
+    // pin: true,
+    // scrub: 1,
+    // onUpdate: self => {
+    //   console.log("progress:", self.progress.toFixed(3), "direction:", self.direction, "velocity", self.getVelocity());
+    // }
+});
+
+const partyGroom = gsap.from(".party-groom", {
+    delay: 0.25,
+    x: 200,
+    duration: 3,
+    opacity: 0,
+    ease: "power3",
+    stagger: 0.5
+});
+ScrollTrigger.create({
+    trigger: ".wedding-info",
+    animation: partyGroom,
+    // Uncomment these to see how they affect the ScrollTrigger
+    // markers: true,
+    start: "top 130px",
+    // end: "top 100px",
+    // toggleClass: "active",
+    // pin: true,
+    // scrub: 1,
+    // onUpdate: self => {
+    //   console.log("progress:", self.progress.toFixed(3), "direction:", self.direction, "velocity", self.getVelocity());
+    // }
+});
