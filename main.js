@@ -59,7 +59,7 @@ ScrollTrigger.create({
 
 const coupleGroom = gsap.from(".couple-card:first-child", {
     delay: 0.25,
-    x: -200,
+    x: -100,
     duration: 2,
     opacity: 0,
     ease: "power3",
@@ -81,7 +81,7 @@ ScrollTrigger.create({
 });
 const coupleBride = gsap.from(".couple-card:nth-child(2)", {
     delay: 0.5,
-    x: 200,
+    x: 80,
     duration: 3,
     opacity: 0,
     ease: "power3",
@@ -127,7 +127,7 @@ ScrollTrigger.create({
 
 const partyBride = gsap.from(".party-bride", {
     delay: 0.25,
-    x: -200,
+    y: 100,
     duration: 3,
     opacity: 0,
     ease: "power3",
@@ -150,7 +150,7 @@ ScrollTrigger.create({
 
 const partyGroom = gsap.from(".party-groom", {
     delay: 0.25,
-    x: 200,
+    y: 100,
     duration: 3,
     opacity: 0,
     ease: "power3",
@@ -161,7 +161,7 @@ ScrollTrigger.create({
     animation: partyGroom,
     // Uncomment these to see how they affect the ScrollTrigger
     // markers: true,
-    start: "top 130px",
+    start: "top 80px",
     // end: "top 100px",
     // toggleClass: "active",
     // pin: true,
