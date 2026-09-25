@@ -658,25 +658,6 @@ h2 {
     transform: translateY(-1px);
 }
 
-/* Khu vực QR */
-.qr-container {
-  padding-top: 20px;
-  
-  opacity: 0;
-  transform: translateY(-50px);
-  transform-origin: top center;
-
-  animation: qrDrop 1s cubic-bezier(0.22, 1, 0.36, 1) forwards;
-}
-
-.qr-container img {
-  display: block;
-  width: 220px;
-  height: 220px;
-  margin: 0 auto;
-  object-fit: contain;
-}
-
 @keyframes qrDrop {
   0% {
     opacity: 0;
